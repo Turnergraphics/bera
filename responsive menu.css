@@ -45,6 +45,25 @@
     transition: .5s;
 
 }
+.sell{
+  font-weight:bold;font-size:larger;margin-top:-5px;background-color: var(--secondary);
+  color: var(--light);
+}
+.topnav .sell:hover{
+  color: var(--c1);
+  background-color:var(--accent)
+}
+@media(max-width:575px){
+  #header .logo img{
+      max-height: 30px;
+  }  
+  .topnav{
+    padding: 7px 5px;
+  }
+  #header {
+    border-radius: 0 0 10px 10px;
+  } 
+}
 
 .topnav a {
   float: left;
