@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="responsive menu.css">
+        <script src="js/main.js"></script>
+        <link rel="stylesheet" href="pop-up login.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    
+        <link rel="shortcut icon" type="image/x-icon" href="images/bera wireframe site logo.png">
+        <title> BERA - Online marketplace with classifed ads listing </title>
+    </head>
+    <body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
+
+        <!--header begins-->
+        <header id="header" class="fixed-top">
+            
+            <div class="topnav" id="myTopnav">
+                <a href="logged in.html" class="logo ">
+                    <img src="images/bera logo 2.png" alt="Logo">
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                    </a>
+                <a href="logged in.html" class="active"><i class="glyphicon glyphicon-home"></i>          Home</a>
+                <a href="categories.html"><i class="glyphicon glyphicon-folder-close"></i>          Categories</a>
+                <a href="contact.html"><i class="glyphicon glyphicon-envelope"></i>          Contact <i class="fa fa-android"></i></a>
+                
+                <a href="account.html"> <i class="glyphicon glyphicon-user"></i>          My Account </a>
+                <div class="search-container">
+                    <form action="#">
+                        <input type="text" placeholder="What are you looking for?" name="search">
+                        <button><a>SELL</a></button>
+                        <button type="submit"><i class="fa fa-search"> Search</i></button>
+                    </form>
+                </div>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+              </div>
+
+          
+            <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+            </script>
+        </header>
+        
+        <!--header ends-->
+            
+        <!-- hero begins --->
+        <section id="hero" class="d-flex align-items-center" style="background: url(images/background.png); background-attachment: fixed; background-position: right; background-size: cover;background-repeat: no-repeat;background-color:var(--primary);background-blend-mode:hard-light;">
+            <div class="container highlight">
+                <div class="row">
+                        
+                        <div class="container">
+                            <h2 style="text-align: center; color:var(--c2)"> Nigeria's No.1 Classified Ads Listing Services </h2>
+                            <div class="row aos-init aos-animate" data-aos="zoom-in">
+                                <div class="col-lg-2 col-md-6 form-group" style="padding-bottom: 10px;">
+                                    <select id="most-like" name="mostLike" class="form-control" >
+                                      <option disabled selected value>Location</option>
+                                      <option value="map">Use map location</option>
+                                      <option value="Lagos">Lagos</option>
+                                      <option value="Ilorin">Ibadan</option>
+                                      <option value="Ilorin">Ilorin</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-3 col-md-6 form-group" style="padding-bottom: 10px;">
+                                    <select id="most-like" name="mostLike" class="form-control" required>
+                                      <option disabled selected value>Category</option>
+                                      <option value="electronics">Electronics</option>
+                                      <option value="mobile phones & tablets">Mobile Phones & Tablets</option>
+                                      <option value="fashion">Fashion</option>
+                                      <option value="services">Services</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-5 col-md-9 form-group" style="padding-bottom: 10px;">
+                                    <input
+                                      type="text"
+                                      name="name"
+                                      id="name"
+                                      class="form-control"
+                                      placeholder="I am looking for ..."
+                                    />
+                                </div>
+                                <div class="col-lg-2 order-3 order-lg-3 " data-aos="zoom-in" data-aos-delay="200">
+                                    <a href="#"><button type="submit" id="submit" class="btn-sign-in submit" style="background: var(--accent);margin: 0px 0 0 0;border: none;">
+                                        Search
+                                      </button></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="row aos-init aos-animate" data-aos="zoom-in">
+                            <div class="col-lg-4">
+                                <h1></h1>
+                            </div>
+                            <div class="col-lg-6 form-group">
+                                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                
+                    
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                            <div class="modal-content clearfix">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <div class="modal-body">
+                                    <h3 class="title">Log In</h3>
+                                    <p class="description">Login here Using Email & Password</p>
+                                    <div class="form-group">
+                                        <span class="input-icon"><i class="fa fa-user"></i></span>
+                                        <input type="email" class="form-control" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="input-icon"><i class="fas fa-key"></i></span>
+                                        <input type="password" class="form-control" placeholder="Password">
+                                    </div>
+                                    <div class="form-group checkbox">
+                                        <input type="checkbox">
+                                        <label>Remamber me</label>
+                                    </div>
+                                    <a href="" class="forgot-pass">Forgot Password?</a>
+                                    <button class="btn">Log In</button>
+
+                                    <div class="modal-body">
+                                    <p> Don't have an account yet?</p>
+                                    <a href="sign up.html"><button class="btn">Create an account</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                
+                </div>
+            </div>
+        </section>
+        <!--hero ends-->
+
+
+        <!--trending items begin-->
+        
+        <div class="container-fluid py-5" id="feature" style="text-align: center;">
+            <style>
+                .p-4 > a {
+                    
+                    text-decoration: none;
+                }
+                .thumbnail{
+                border-radius: 100%;
+                border: none;
+                text-align: center;
+                }
+                
+                @media(max-width:575px){
+                    .thumbnail{
+                        height: 100px;
+                        width: 100%;
+                    }
+                }
+            </style>
+            <div class="container-fluid py-5 px-lg-5">
+                <div class="text-left">
+                    <h1 class="mb-5"> Explore Popular Categories <a style="font-size:medium;" href="categories.html">See all</a>     <i style="font-size:medium;" class="glyphicon glyphicon-arrow-right"></i></h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="p-4">
+                        <img class="thumbnail" src="images/sneakers.png">
+                        <a href="#"> Sneakers </a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="p-4">
+                        <img class="thumbnail" src="images/ad9.png">
+                        <a href="#"> Smartphones </a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="p-4">
+                        <img class="thumbnail" src="images/sneakers 2.png">
+                        <a href="#"> Sneakers </a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="p-4">
+                        <img class="thumbnail" src="images/ad9.png">
+                        <a href="#"> Sneakers </a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="p-4">
+                        <img class="thumbnail" src="images/watch.png">
+                        <a href="#"> Wristwatches </a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="p-4">
+                        <img class="thumbnail" src="images/ad9.png">
+                        <a href="#"> Sell </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid py-5" id="feature" style="text-align: center;">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="mb-5">Most Searched Categories</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="level"> Hoodies </div>
+                    <div class="p-4">
+                        <img class="thumbnail" src="images/ad2.png">
+                    </div>
+                    <button class="btn">Explore</button>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="level"> Hoodies </div>
+                    <div class="p-4">
+                        <img class="thumbnail" src="images/ad2.png">
+                    </div>
+                    <button class="btn">Explore</button>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="level"> Gaming Accessories </div>
+                    <div class="p-4">
+                        <img class="thumbnail" src="images/ad10.png">
+                    </div>
+                    <button class="btn">Explore</button>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="level"> Women's Bags </div>
+                    <div class="p-4">
+                        <img class="thumbnail" src="images/ad6.png">
+                    </div>
+                    <button class="btn">Explore</button>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="level"> Phones </div>
+                    <div class="p-4">
+                        <img class="thumbnail" src="images/ad6.png">
+                    </div>
+                    <button class="btn">Explore</button>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="level"> Computer Accesories </div>
+                    <div class="p-4">
+                        <img class="thumbnail" src="images/ad6.png">
+                    </div>
+                    <button class="btn">Explore</button>
+                </div>
+            </div>
+        </div>
+
+        
+        
+        <!--trending items end-->
+           
+
+        <!-- Download Start -->
+        <div class="container-fluid py-5" style=" background: linear-gradient(to top, var(--primary), var(--secondary));">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.1s" src="images/bera download 1.png">
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <h1 class="mb-4" style="color: var(--light);">Our App Is Available For Any Device. Download now!</h1>
+                        <p class="mb-4" style="color: var(--light);">Buy, sell and find just about anything using the app on your mobile device or computer.</p>
+                        <div class="row g-4">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <a href="#" class="d-flex btn-download rounded py-3 px-4">
+                                    <i class="fab fa-apple fa-3x text-white flex-shrink-0"></i>
+                                    <div class="ms-3">
+                                        <p class="text-white mb-0">Available On</p>
+                                        <h5 class="text-white mb-0">App Store</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                <a href="#" class="d-flex btn-download rounded py-3 px-4">
+                                    <i class="fab fa-android fa-3x text-white flex-shrink-0"></i>
+                                    <div class="ms-3">
+                                        <p class="text-white mb-0">Available On</p>
+                                        <h5 class="text-white mb-0">Play Store</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Download End -->
+
+
+        <!--footer begins-->
+        <footer id="footer" style="background:var(--primary)">
+
+            <div class="footer-newsletter">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                            <h4>Sign Up for Our Newsletter</h4>
+                            <p>Stay up to date on latest services and products.</p>
+                            <form action="" method="post" onsubmit="if (!window.__cfRLUnblockHandlers) return false; return subscribeme()">
+                            <input type="email" name="email" id="useremail">
+                            <input type="submit" value="Subscribe">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--footer top begins-->
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 footer-contact">
+                            <img src="images/bera logo 2.png" class="img-fluid" style="transform: translate(-12%);">
+                            <strong>Phone:</strong><a href="#"> +234**********</a><br>
+                            <strong>Email:</strong> <a href="#">info@bera.net</a><br>
+                        </div>
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>About Bera</h4>
+                            <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="hiring.html">We are hiring!</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="terms and conditions.html">Terms & Conditions</a></li>            
+                            <li><i class="bx bx-chevron-right"></i> <a href="privacy policy.html">Privacy Policy</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="billing.html">Billing Policy</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="cookie policy.html">Cookie Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Suppport</h4>
+                            <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">support@bera.ng</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="contact.html">Contact Us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="fqa.html">FQA</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="safety.html">Safety Advice</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> <a href="logged in.html">Home</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="categories.html">Top Categories</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Promote Your Ad</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="account.html">My Account</a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--footer top ends-->
+    
+            <!--copyright-->
+            <div class="container footer-bottom clearfix">
+                <div class="copyright">
+                    © Copyright <strong><span>2022</span></strong>. All Rights Reserved
+                </div>
+                <div class="credits">
+                    Designed by <a href="https://turnergraphics.github.io/">Timilehin A.</a>
+                </div>
+            </div>   
+            <!--copyright ends-->
+        
+        </footer>
+        <!--footer ends-->
+
+
+        <!-- Back to Top -->
+        <a href="#" class=" btn-lg btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up text-white"></i></a>
+
+    </body>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+</html>
